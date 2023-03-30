@@ -1,33 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <nav>
+        <img
+          className="logo"
+          src="https://www.creativefabrica.com/wp-content/uploads/2021/01/23/Letter-S-SS-Logo-Design-Simple-Vector-Graphics-8004602-1-580x387.jpg"
+          alt="Logo" />
+        <h1 className="title">Cajas artesanales</h1>
+      </nav>
+      <div className="Product-showcase">
+        <img src="https://www.formycake.com/16531-home_default/caja-decorada-corazones-28x28x8cm-azucren.jpg" alt="Imagen del producto" />
+        <div>
+          <p>Esta caja decorada es perfecta para eventos especiales. Está diseñada con un estilo elegante y sofisticado, con detalles en dorado y un lazo de seda en la parte superior. El interior está forrado con papel de seda para proteger los artículos que se colocan dentro. Es la caja ideal para regalos de bodas, cumpleaños, aniversarios o cualquier otra ocasión especial.</p>
+          <p>$ 10.00</p>
+        </div>
+        <button>Comprar</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }
